@@ -1,0 +1,50 @@
+# Manual do Usuário - Sistema Laços Caninos
+
+Este manual orienta os operadores, voluntários e administradores de abrigos de animais na utilização do sistema web **Laços Caninos**, desenvolvido no âmbito do Projeto Integrador / Extensão Universitária.
+
+---
+
+## 1. Acesso ao Sistema
+O sistema opera em arquitetura SPA (Single Page Application) diretamente na web, utilizando persistência em banco de dados relacional em nuvem (Supabase).
+* **Pré-requisitos:** Apenas um navegador web moderno (Google Chrome, Microsoft Edge, Firefox, etc.) com ligação à internet.
+* **Como abrir:** Dê um duplo clique ou acesse o endereço web do ficheiro `index.html`.
+
+---
+
+## 2. Navegação Principal
+A barra de navegação superior disponibiliza três secções principais:
+1. **Animais Resgatados:** Gestão do cadastro de pets e histórico médico.
+2. **Adotantes:** Registo de pessoas interessadas na adoção responsável.
+3. **Painel do Abrigo:** Indicadores estatísticos em tempo real, relatórios de controlo e o módulo de vinculação de adoções.
+
+---
+
+## 3. Funcionalidades do Sistema
+
+### 3.1. Cadastrar um Novo Pet
+1. Clique no botão **"Animais Resgatados"** na barra superior.
+2. Preencha os campos do formulário:
+   * **Nome do Animal:** Ex: Rex, Mel.
+   * **Raça / Porte:** Ex: SRD / Médio.
+   * **Tipo de Vacina / Procedimento:** Ex: V10, Antirrábica, Castração.
+   * **Data da Aplicação / Cirurgia:** Selecione a data no calendário.
+   * **Observações:** Informações de comportamento ou saúde.
+3. Clique em **"Salvar Cadastro"**. Os dados serão gravados de forma segura na nuvem.
+
+### 3.2. Cadastrar um Novo Adotante
+1. Clique na aba **"Adotantes"** na barra superior.
+2. Preencha os dados do interessado:
+   * **Nome Completo**
+   * **Telefone / WhatsApp**
+   * **Endereço Completo**
+3. Clique em **"Cadastrar Adotante"**.
+
+### 3.3. Realizar o Vínculo de Adoção
+1. Clique na aba **"Painel do Abrigo"**.
+2. Localize a secção **"Registrar Nova Adoção"**.
+3. Selecione o animal pretendido na primeira caixa de seleção (apenas animais disponíveis serão exibidos).
+4. Selecione o adotante responsável na segunda caixa de seleção.
+5. Clique em **"Confirmar Adoção"**. O sistema atualizará o status do pet automaticamente para vinculado.
+
+### 3.4. Exclusão de Registos
+* Tanto na listagem geral de pets como na de adotantes, existe um botão de **"Excluir"** ao lado de cada linha, permitindo a remoção de registos desatualizados do banco de dados mediante confirmação.
